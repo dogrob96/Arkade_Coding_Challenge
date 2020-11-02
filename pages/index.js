@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <h1 className={styles.title} style={{paddingBottom: "10rem"}}>
           Marvel Character Search
         </h1>
 

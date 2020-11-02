@@ -5,7 +5,7 @@ class CharacterContainer extends Component {
     render() {
         console.log(this.props.characters)
         return (
-            <div>
+            <div style={{display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center"}}>
                 {this.props.characters.map(character => <Character character = {character}/>)}
             </div>
         )
