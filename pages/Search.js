@@ -3,6 +3,7 @@ import CharacterContainer from "./CharacterContainer"
 
 
 class Search extends React.Component {
+    getInitialProps(){}
 
     state = {
       characters:[],
