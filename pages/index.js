@@ -15,9 +15,9 @@ export default function Home() {
           Marvel Character Search
         </h1>
 
-        <p className={styles.description}>
-          <Search/>
-        </p>
+        <div className={styles.description}>
+          <Search></Search>
+        </div>
 
         
       </main>

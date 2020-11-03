@@ -3,7 +3,7 @@ import CharacterContainer from "./CharacterContainer"
 
 
 class Search extends React.Component {
-    getInitialProps(){}
+    getStaticProps(){}
 
     state = {
       characters:[],
@@ -36,10 +36,10 @@ class Search extends React.Component {
     render(){
     return (
         <div style = {{textAlign: 'center'}}>
-        <input class="form-contol" type='text' value = {this.state.searchTerm} onChange = {this.editSearchTerm} placeholder = 'Search for a Character!'/>
+        <input className="form-contol" type='text' value = {this.state.searchTerm} onChange = {this.editSearchTerm} placeholder = 'Search for a Character!'/>
         <br></br>
         <h3 style={{paddingTop: "2rem"}}>These are the Characters:</h3>
-        <CharacterContainer characters = {this.state.characters}/>
+        <CharacterContainer characters = {this.state.characters}></CharacterContainer>
         </div>
     );
     }

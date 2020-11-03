@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 
 class Character extends Component {
-    getInitialProps(){}
+
 
     render() {
         console.log("CHARACTER:" + this.props)
+        this.props.character =this.props.character || {thumbnail:{path:"",extension:""},name:""}
         if(this.props.character !== null){
         return (
             <div style={{width:"33%",maxWidth:"33%",minWidth: "260px", alignContent: "center"}}>
